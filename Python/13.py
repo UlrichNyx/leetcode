@@ -1,6 +1,5 @@
 # 13. Roman to Integer
-# URL: https://leetcode.com/problems/roman-to-integer/description/
-
+# URL: https://leetcode.com/problems/roman-to-integer/
 class Solution(object):
     def romanToInt(self, s):
         """
@@ -10,13 +9,13 @@ class Solution(object):
 
         sum = 0
         values = {
-        "I":1,
-        "V":5,
-        "X":10,
-        "L":50,
-        "C":100,
-        "D":500,
-        "M":1000,
+            "I": 1,
+            "V": 5,
+            "X": 10,
+            "L": 50,
+            "C": 100,
+            "D": 500,
+            "M": 1000,
         }
 
         last = None

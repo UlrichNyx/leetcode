@@ -1,5 +1,6 @@
 # 21. Merge Two Sorted Lists
-# URL: https://leetcode.com/problems/merge-two-sorted-lists/description/
+# URL: https://leetcode.com/problems/merge-two-sorted-lists/
+
 
 # Definition for singly-linked list.
 # class ListNode(object):
@@ -26,4 +27,3 @@ class Solution(object):
                     list2 = list2.next
             traverse = traverse.next
         return root.next.next
-        

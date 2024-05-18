@@ -1,5 +1,6 @@
 # 94. Binary Tree Inorder Traversal
-# URL: https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+# URL: https://leetcode.com/problems/binary-tree-inorder-traversal/
+
 
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -11,5 +12,8 @@ class Solution(object):
     def inorderTraversal(self, root):
         if root is None:
             return []
-        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
-        
+        return (
+            self.inorderTraversal(root.left)
+            + [root.val]
+            + self.inorderTraversal(root.right)
+        )

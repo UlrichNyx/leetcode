@@ -1,5 +1,6 @@
 # 88. Merge Sorted Array
-# URL: https://leetcode.com/problems/merge-sorted-array/description/
+# URL: https://leetcode.com/problems/merge-sorted-array/
+
 
 class Solution(object):
     def replace_tail(self, nums1, n):
@@ -9,14 +10,13 @@ class Solution(object):
             else:
                 return
 
-
     def pushback(self, nums1, index, value):
-            previous = nums1[index]
-            nums1[index] = value
-            for x in range(index + 1, len(nums1)):
-                temp = nums1[x]
-                nums1[x] = previous
-                previous = temp
+        previous = nums1[index]
+        nums1[index] = value
+        for x in range(index + 1, len(nums1)):
+            temp = nums1[x]
+            nums1[x] = previous
+            previous = temp
 
     def merge(self, nums1, m, nums2, n):
         """
@@ -47,4 +47,3 @@ class Solution(object):
                 self.pushback(nums1, pivot1, nums2[pivot2])
                 pivot2 += 1
                 pivot1 += 1
-

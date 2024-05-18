@@ -1,5 +1,6 @@
 # 100. Same Tree
-# URL: https://leetcode.com/problems/same-tree/description/
+# URL: https://leetcode.com/problems/same-tree/
+
 
 # Definition for a binary tree node.
 # class TreeNode(object):

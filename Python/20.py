@@ -1,13 +1,10 @@
 # 20. Valid Parentheses
-# URL: https://leetcode.com/problems/valid-parentheses/description/
+# URL: https://leetcode.com/problems/valid-parentheses/
+
 
 class Solution(object):
     def isValid(self, s):
-        mapping = {
-            "(": None,
-             ")":"(",
-        "[":None, "]":"[",
-        "{":None, "}":"{"}
+        mapping = {"(": None, ")": "(", "[": None, "]": "[", "{": None, "}": "{"}
         open_brackets = []
         for x in s:
             if mapping[x] is None:

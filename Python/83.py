@@ -1,5 +1,6 @@
 # 83. Remove Duplicates from Sorted List
-# URL: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+# URL: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+
 
 # Definition for singly-linked list.
 # class ListNode(object):
@@ -13,7 +14,7 @@ class Solution(object):
         :rtype: ListNode
         """
 
-        temp = ListNode(val = 0, next = head)
+        temp = ListNode(val=0, next=head)
         temp = temp.next
         prev = None
 
@@ -28,4 +29,3 @@ class Solution(object):
             if not temp is None:
                 temp = temp.next
         return head
-        

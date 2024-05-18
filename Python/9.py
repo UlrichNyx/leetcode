@@ -1,5 +1,6 @@
 # 9. Palindrome Number
-# URL: https://leetcode.com/problems/palindrome-number/description/
+# URL: https://leetcode.com/problems/palindrome-number/
+
 
 class Solution(object):
     def isPalindrome(self, x):
@@ -9,7 +10,5 @@ class Solution(object):
             print(x[i])
             if x[i] != x[len(x) - i - 1]:
                 return False
-        
+
         return True
-        
-        

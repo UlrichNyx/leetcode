@@ -1,5 +1,6 @@
 # 66. Plus One
-# URL: https://leetcode.com/problems/plus-one/description/
+# URL: https://leetcode.com/problems/plus-one/
+
 
 class Solution(object):
     def plusOne(self, digits):

@@ -1,5 +1,6 @@
 # 27. Remove Element
-# URL: https://leetcode.com/problems/remove-element/description/
+# URL: https://leetcode.com/problems/remove-element/
+
 
 class Solution(object):
     def removeElement(self, nums, val):
@@ -13,8 +14,8 @@ class Solution(object):
             if x == val:
                 continue
             else:
-                res.append(x)     
-        
+                res.append(x)
+
         for x in range(len(res)):
             nums[x] = res[x]
         return len(res)
